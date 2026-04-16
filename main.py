@@ -2812,16 +2812,21 @@ async def main():
     await app.run_polling(drop_pending_updates=True)
 
 
-if __name__ == "__main__":
-    import sys
-    try:
-        import nest_asyncio
-        nest_asyncio.apply()
-    except ImportError:
-        pass
+import asyncio
+# لا حاجة لـ nest_asyncio في بيئة الإنتاج الثابتة
 
+async def main():
+    # ضع هنا منطق إعداد البوت الخاص بك
+    # تأكد من استخدام await عند تشغيل البوت
+    # مثال:
+    # await application.run_polling()
+    pass
+
+if __name__ == "__main__":
     try:
-        loop = asyncio.get_running_loop()
-        loop.create_task(main())
-    except RuntimeError:
+        # هذه الطريقة هي المعيارية وتمنع حدوث أخطاء 
+        # "Cannot close a running event loop"
         asyncio.run(main())
+    except KeyboardInterrupt:
+        # التعامل مع إيقاف البوت يدوياً بسلام
+        pass
