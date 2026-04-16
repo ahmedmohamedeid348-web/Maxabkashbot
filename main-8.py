@@ -75,7 +75,7 @@ from telegram.ext import (
 # ═══════════════════════════════════════════════════════════════
 
 # 🔑 ضع توكن البوت من @BotFather
-BOT_TOKEN = "8730160263:AAHeCUqKCtzlUdO-OEiRXvdPy7iVcY10rmQ"
+BOT_TOKEN = "8086835374:AAEOnAyxUy3xlu1ojWGqMUuRf8pNu74WJDo"
 
 # <tg-emoji emoji-id='5114039184507536021'>👑</tg-emoji> ضع ID حسابك على تيليجرام (ممكن تضيف أكتر من أدمن)
 ADMIN_IDS = [7804343757 , 6355023208]
@@ -87,7 +87,7 @@ DB_PATH = "mega_bot.db"
 BOT_NAME = "<tg-emoji emoji-id='4958926882994127612'>💰</tg-emoji> بوت الكسب الاحترافي"
 
 # <tg-emoji emoji-id='5861568308116984245'>🚀</tg-emoji> رابط البوت (غيّره لاسم البوت بتاعك)
-BOT_USERNAME = "YourBotUsername"  # بدون @ مثال: cashbot2025
+BOT_USERNAME = "@Free_internet_kbot"  # بدون @ مثال: cashbot2025
 
 # <tg-emoji emoji-id='5859588916604047101'>⚙️</tg-emoji> الإعدادات الافتراضية (تتغير من لوحة الأدمن)
 DEFAULT_SETTINGS = {
